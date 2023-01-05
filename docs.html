@@ -160,6 +160,23 @@
                 class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"
               >
                 <a href="#link2_3">Start Assesing</a>
+                <ul class="nav">
+                  <li
+                    class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"
+                  >
+                    <a href="#link2_3_1">Draw AOI</a>
+                  </li>
+                  <li
+                    class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"
+                  >
+                    <a href="#link2_3_2">Input Range and Assess</a>
+                  </li>
+                  <li
+                    class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"
+                  >
+                    <a href="#link2_3_3">Assessing Again (Optional)</a>
+                  </li>
+                </ul>
               </li>
               <li
                 class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"
@@ -209,7 +226,7 @@
         <!-- Link1 start -->
         <section id="link1">
           <div class="h-full mt-10">
-            <p class="font-bold text-2xl">Introduction</p>
+            <p class="font-bold text-3xl">Introduction</p>
             <br>
             <p class="leading-0 w-3/4">
             Potential levels in the ocean are determined by a variety of factors, including the level of Chlorophyll-a, Sea Surface Temperature, Total Suspended Solids, and Sea Surface Salinity. Chlorophyll-a is an important indicator of the health of a marine ecosystem, as its presence indicates the availability of nutrients for photosynthesis. Sea Surface Temperature is an important factor in determining the overall health of an ocean, as it can influence the movement of ocean currents and the availability of nutrients in the water. Total Suspended Solids measure the amount of suspended particles in the water, which can be a sign of pollution or other environmental issues. Lastly, Sea Surface Salinity measures the saltiness of the water, which can indicate the presence of other minerals in the water and have an impact on the ocean's overall health. All of these factors must be assessed to determine the potential levels in the ocean.
@@ -222,7 +239,7 @@
         <!-- Link2 Start -->
         <section id="link2">
           <div class="h-full mt-5">
-            <p class="font-bold text-2xl">Basic Analysis</p>
+            <p class="font-bold text-3xl">Basic Analysis</p>
             <br>
             <p class="leading-0 w-3/4">Basic analysis is use for simple detection of potential fishing zone. The potential fishing zone will generated from Landsat 8 data collection with custom date range. For the result, there will shown a suitability index value in layout map with higher value mean more high potential fish at there.</p>
           </div>
@@ -238,24 +255,73 @@
           <br>
           <section id="link2_2" class="border-1-[2px]">
             <div class="h-full mt-3 ml-5">
-              <p class="font-normal text-xl">UI Description</p> 
+              <p class="font-bold text-2xl">UI Description</p> 
               <br>
-              <img src="img\ui_awal_basic.jpeg" alt="UI first look" style="width:1000px;">
+              <img src="img\UI_1_desc.png" alt="UI first look" style="width:800px;">
               <br>
-              <p class="text-sm pb-4">1. judul</p>
-              <p class="text-sm pb-4">2. lorem</p>
-              <p class="text-sm pb-4">3. arif nurhadi</p>
-              <p class="text-sm pb-4">99. ...</p>
+              <h2 class="text-base pb-2">1. Drawing Tool</h2>
+              <p class="text-base pb-4 ml-4">Tool for drawing or making your Area of Interest (AOI)</p>
+              <h2 class="text-base pb-2">2. Geometry Layer</h2>
+              <p class="text-base pb-4 ml-4"> Panel for managing your drawn AOI/geometry such as showing, hiding, and deleting geometry</h2>
+              <h2 class="text-base pb-2">3. Basemap Layer</h2>
+              <p class="text-base pb-4 ml-4"> Panel for choosing your preferable basemap</p>
+              <h2 class="text-base pb-2">4. Show/Hide Button</h2>
+              <p class="text-base pb-4 ml-4"> Button to show/hide main panel</p>
+              <h2 class="text-base pb-2">5. Draw AOI Button</h2>
+              <p class="text-base pb-4 ml-4"> Button to open AOI Drawing Tool in the main panel</p>
+              <h2 class="text-base pb-2">6. Data Range Input-box</h2>
+              <p class="text-base pb-4 ml-4"> Box for adding data range input</p>
+              <h2 class="text-base pb-2">7. Assess Button</h2>
+              <p class="text-base pb-4 ml-4"> Button to start assessing data based on your input data range</p>   
             </div>
           </section>
           <br>
 
           <section id="link2_3" class="border-1-[2px]">
             <div class="h-full mt-3 ml-5">
-              <p class="font-normal text-xl">Start Assesing</p>
+              <p class="font-bold text-2xl">Start Assessing</p>
+              <p> PFZ Assessment are done by your drawn AOI and data range input. The steps for doing so are explained below</p>
               <br>
-              <p class="text-sm pb-4">1. ...</p>
-              <p class="text-sm pb-4">2. ...</p>
+              <section id="link2_3_1" class="border-1-[2px]">
+                <div class="h-full mt-1 ml-5">
+                  <h2 class="font-bold text-xl">A. Draw AOI</h2>
+                  <p class="text-base pb-4 ml-6">Draw or make your Area Of Interest (AOI) in the map canvas to your preferrable area</p>
+                  <p class="text-xl pb-1 ml-6">Drawing Tool Description</p>
+                  <br>
+                  <img class="ml-6" src="img\UI_drawing_1.png" alt="Drawing Tool UI Description" style="width:720px;">
+                  <br>
+                  <h3 class="text-base pb-1 ml-6">1. Pan Tool</h3>
+                  <p class="text-base pb-2 ml-9">Geometry tool for dragging map view and select geometry on the map</p>
+                  <h3 class="text-base pb-1 ml-6">2. Point Tool</h3>
+                  <p class="text-base pb-2 ml-9">Geometry tool for making a Point of Interest (POI)</p>
+                  <h3 class="text-base pb-1 ml-6">3. Line Tool</h3>
+                  <p class="text-base pb-2 ml-9">Geometry tool for makina a line geometry (not so much used in the app)</p>
+                  <h3 class="text-base pb-1 ml-6">4. Polygon Tool</h3>
+                  <p class="text-base pb-2 ml-9">Geometry tool for making an AOI with polygon-shaped</p>
+                  <h3 class="text-base pb-1 ml-6">5. Rectangular Tool</h3>
+                  <p class="text-base pb-2 ml-9">Geometry tool for making an AOI with rectangular-shaped</p>
+                  <h3 class="text-base pb-1 ml-6">6. Geometry Layer Panel</h3>
+                  <p class="text-base pb-6 ml-9">Panel for managing geometry layer such as showing/hiding/deleting geometry</p>
+                </div>
+              </section>
+              <section id="link2_3_2" class="border-1-[2px]">
+                <div class="h-full mt-1 ml-5">
+                  <h2 class="font-bold text-xl">B. Input Range and Assess</h2>
+                  <p class="text-base pb-4 ml-6">Range are added in the date input box and the data between those range are assessed when <em>Assess Data</em> button's clicked</p>
+                  <h2 class="text-base pb-1 ml-6"><u>Notes:</u></h2>
+                  <p class="text-base pb-4 ml-6">Assessment's result is much more valid if your data range is in a month until a year</p>
+                  <img class="pb-6 ml-6" src="img\UI_dateinput_1.png" alt="Date Input UI Description" style="width:720px;">
+                </div>
+              </section>
+              <section id="link2_3_3" class="border-1-[2px]">
+                <div class="h-full mt-1 ml-5">
+                  <h2 class="font-bold pb-2 text-xl">C. Assessing Again (Optional)</h2>
+                  <p class="text-base pb-4 ml-6">1. Move or delete your AOI using Pan Tool</p>
+                  <p class="text-base pb-4 ml-6">2. Make or draw your AOI again in your preferable area</p>
+                  <p class="text-base pb-4 ml-6">3. Choose Refresh Panel Button in the main panel</p>
+                  <p class="text-base pb-4 ml-6">4. Input your new data range if needed and choose Assess Data Button</p>
+                </div>
+              </section>
             </div>
           </section>
           <br>
