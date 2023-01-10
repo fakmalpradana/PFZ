@@ -37,7 +37,7 @@
     class="dark:bg-slate-900 bg-white dark:text-white"
   >
     <!-- Header start here -->
-    <header class="w-full p-3 border-b dark:border-b flex ">
+    <header class="w-full p-3 border-b dark:border-b flex fixed bg-white">
       <nav
         class="w-full flex flex-col lg:flex-row md:flex-row sm:flex-row items-start lg:item-center md:item-center sm:item-center lg:justify-between md:justify-between sm:justify-between justify-start"
       >
@@ -64,7 +64,36 @@
                   <img src="./public/svgs/sun-dark.svg" alt="sun Link" />
                 </p>
               </li>
-              
+              <li class="mr-5 flex dark:hidden">
+                <a href="#Github"
+                  ><img src="./public/svgs/github.svg" alt="GitHub Link"
+                /></a>
+              </li>
+              <li class="mr-5 hidden dark:flex">
+                <a href="#Github"
+                  ><img src="./public/svgs/github-dark.svg" alt="GitHub Link"
+                /></a>
+              </li>
+              <li class="mr-5 flex dark:hidden">
+                <a href="#Twitter"
+                  ><img src="./public/svgs/twitter.svg" alt="Twitter Link"
+                /></a>
+              </li>
+              <li class="mr-5 hidden dark:flex">
+                <a href="#Twitter"
+                  ><img src="./public/svgs/twitter-dark.svg" alt="Twitter Link"
+                /></a>
+              </li>
+              <li class="mr-5 flex dark:hidden">
+                <a href="#Youtube"
+                  ><img src="./public/svgs/youtube.svg" alt="YouTube Link"
+                /></a>
+              </li>
+              <li class="mr-5 hidden dark:flex">
+                <a href="#Youtube"
+                  ><img src="./public/svgs/youtube-dark.svg" alt="YouTube Link"
+                /></a>
+              </li>
             </ul>
           </div>
         </ul>
@@ -105,8 +134,8 @@
 
     <div class="flex flex-col md:flex-row lg:flex-row">
       <!-- Side menu starts here -->
-      <nav
-        class="block overflow-y-auto pt-0 pb-15 ml-7 h-screen sticky top-15 md:fixed md:h-4/6 lg:fixed"
+      <div
+        class=" hidden lg:block fixed z-20 inset-0 top-[3.8125rem] left-[max(0px,calc(1%-45rem))] right-auto w-[19.5rem] pb-10 px-8 overflow-y-auto"
         data-spy="affix"
         data-offset-top="200"
         data-offset-bottom="200"
@@ -257,10 +286,10 @@
           <li class="font-medium"><a href="#link5">Reference</a></li>
           <li class="font-medium"><a href="#link6">Issues</a></li>
         </ul>
-      </nav>
+      </div>
       <!-- Side Menu ends here -->
 
-      <div class="pl-10 md:pl-[250px] lg:pl-[400px]">
+      <div class="mt-10 pl-10 md:pl-[250px] lg:pl-[400px]"> 
         <!-- Link1 start -->
         <section id="link1">
           <div class="h-full mt-10">
@@ -295,7 +324,8 @@
             <div class="h-full mt-3 ml-5">
               <p class="font-bold text-2xl">UI Description</p> 
               <br>
-              <img src="img\ui_awal_basic.jpeg" alt="UI first look" style="width:1000px;">
+              <img src="img\UI_1_desc.png" alt="UI first look" style="width:800px;">
+              <img src="img\UI_2_desc2.png" alt="UI second look after assessing" style="width:800px">
               <br>
               <h2 class="text-base pb-2">1. Drawing Tool</h2>
               <p class="text-base pb-4 ml-4">Tool for drawing or making your Area of Interest (AOI)</p>
@@ -430,7 +460,8 @@
               <div class="h-full mt-3 ml-5">
                 <p class="font-bold text-2xl">UI Description</p> 
                 <br>
-                <img src="img\ui_awal_basic.jpeg" alt="UI first look" style="width:1000px;">
+                <img src="img\UI_adv_desc2.png" alt="UI first look" style="width:800px;">
+                <img src="img\UI_adv2_desc.png" alt="UI second look" style="width:800px">
                 <br>
                 <h2 class="text-base pb-2">1. Drawing Tool</h2>
                 <p class="text-base pb-4 ml-4">Tool for drawing or making your Area of Interest (AOI)</p>
@@ -727,7 +758,7 @@
     </div>
     <!-- Footer starts here -->
     <footer>
-      <div class="dark:bg-white bg-slate-900 h-38 py-1 px-1 mt-5">
+      <div class="dark:bg-dark bg-slate-90 h-38 py-1 px-1 mt-5 md:pl-[250px] lg:pl-[400px]">
         <div
           tabindex="0"
           aria-label="footer"
@@ -739,14 +770,14 @@
                 <li class="md:mr-6 cursor-pointer pt-4 lg:py-0">
                   <a
                     href="./index.html"
-                    class="text-white dark:text-black focus:outline-none focus:underline hover:text-gray-200"
+                    class="text-black dark:text-white focus:outline-none focus:underline hover:text-gray-200"
                     >Home
                   </a>
                 </li>
                 <li class="md:mr-6 cursor-pointer pt-4 lg:py-0">
                   <a
                     href="./docs.html"
-                    class="text-white dark:text-black focus:outline-none focus:underline hover:text-gray-200"
+                    class="text-black dark:text-white focus:outline-none focus:underline hover:text-gray-200"
                     >Documentation
                   </a>
                 </li>
@@ -754,7 +785,7 @@
             </div>
             <div class="text-sm text-color mb-10 f-f-l">
               <!-- Rename cleandocs with your respective name -->
-              <p tabindex="0" class="text-white dark:text-black focus:outline-none">
+              <p tabindex="0" class="text-black dark:text-white focus:outline-none">
                 &copy; 2023 Kerja Praktik UGM - Imani Prima. All rights reserved
               </p>
             </div>
