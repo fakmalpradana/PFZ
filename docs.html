@@ -135,7 +135,7 @@
     <div class="flex flex-col md:flex-row lg:flex-row">
       <!-- Side menu starts here -->
       <nav
-        class="block overflow-y-auto pt-20 pb-4 ml-7 h-screen sticky top-15  md:fixed lg:fixed"
+        class="block overflow-y-auto pt-0 pb-15 ml-7 h-screen sticky top-15 md:fixed md:h-4/6 lg:fixed"
         data-spy="affix"
         data-offset-top="200"
         data-offset-bottom="200"
@@ -261,7 +261,7 @@
                   <li
                     class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"
                   >
-                    <a href="#link4_3_2">Input Range and Assess Area</a>
+                    <a href="#link4_3_2">Input Range-Scale and Assess</a>
                   </li>
                   <li
                     class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"
@@ -550,11 +550,149 @@
         
         </section>
         <!-- Link3 end -->
+        
+        <!-- Link4 starts-->
+        <section id="link4">
+          <div class="h-full mt-5">
+            <p class="font-extrabold text-3xl">Monthly Chart Analysis</p>
+            <br>
+            <p class="leading-0 w-3/4">
+              Monthly Chart Analysis application version is used for advance analysis to know the seasonality of PFZ in
+              certain area and time. The analysis can be done by using the Monthly PFZ Suitability Score Index Chart and
+              Harmonized Monthly PFZ Suitability Score Index over an area and a certain pixel. The PFZ is also generated
+              from USGS Landsat 8 Surface Reflectance data collection in custom range within 3, 6, 12, 16, and 24 months
+              depends on your date range input.
+            </p>
+          </div>
+        
+          <section id="link4_1" class="border-l-[2px]">
+            <div class="h-full mt-3 ml-5">
+              <p class="font-bold text-xl">Quick Start</p>
+              <p class="text-sm pb-4">Click the button below to start the app</p>
+              <a href="https://dikihyatma92.users.earthengine.app/view/pfz-chart-analysis" class="text-white h-52 bg-indigo-600 p-2 w-44 rounded text-center mr-5">
+                Launch Prototype
+              </a>
+            </div>
+          </section>
+          <br>
+          <section id="link4_2" class="border-1-[2px]">
+            <div class="h-full mt-3 ml-5">
+              <p class="font-bold text-2xl">UI Description</p> 
+              <br>
+              <img src="img\UI_cht_desc.png" alt="UI first look" style="width:800px;">
+              <img src="img\UI_cht2_desc.png" alt="UI second look" style="width:800px">
+              <br>
+              <h2 class="text-base pb-2">1. Drawing Tool</h2>
+              <p class="text-base pb-4 ml-4">Tool for drawing or making your Area of Interest (AOI)</p>
+              <h2 class="text-base pb-2">2. Geometry Layer</h2>
+              <p class="text-base pb-4 ml-4"> Panel for managing your drawn AOI/geometry such as showing, hiding, and deleting geometry</h2>
+              <h2 class="text-base pb-2">3. Basemap Layer</h2>
+              <p class="text-base pb-4 ml-4"> Panel for choosing your preferable basemap</p>
+              <h2 class="text-base pb-2">4. Data Range Input-box</h2>
+              <p class="text-base pb-4 ml-4"> Box for adding data range input</p>
+              <h2 class="text-base pb-2">5. Scale Input-box</h2>
+              <p class="text-base pb-4 ml-4"> Box for adding scale input</p>
+              <h2 class="text-base pb-2">6. Assess Button</h2>
+              <p class="text-base pb-4 ml-4"> Button to start assessing data based on your input data range</p>   
+              <h2 class="text-base pb-2">7. Zoom In/Out Tool</h2>
+              <p class="text-base pb-4 ml-4"> Tool for zoom in and out the map canvas</p>
+              <h2 class="text-base pb-2">8. Fullscreen Button</h2>
+              <p class="text-base pb-4 ml-4"> Button for viewing map canvas in fullscreen mode</p>
+              <h2 class="text-base pb-2">9. Download Chart Tool</h2>
+              <p class="text-base pb-4 ml-4"> Tool for downloading chart to your storage</p>
+              <h2 class="text-base pb-2">10. Monthly Chart Panel</h2>
+              <p class="text-base pb-4 ml-4"> Panel for showing monthly chart of your AOI</p>
+              <h2 class="text-base pb-2">11. Legend Panel</h2>
+              <p class="text-base pb-4 ml-4"> Panel to know the meaning of the colors in the shown image</p>
+              <h2 class="text-base pb-2">12. Inspector Tool</h2>
+              <p class="text-base pb-4 ml-4"> Tool for assessing monthly chart in a pixel or point</p>
+              <h2 class="text-base pb-2">13. Close Inspector Button</h2>
+              <p class="text-base pb-4 ml-4"> Button for closing inspector tool and removing the point chart</p>
+              <h2 class="text-base pb-2">14. Refresh Panel Button</h2>
+              <p class="text-base pb-4 ml-4"> Button to refresh all main panel and start assessing different data</p>
+            </div>
+          </section>
+          <br>
 
+          <section id="link4_3" class="border-1-[2px]">
+            <div class="h-full mt-3 ml-5">
+              <p class="font-bold text-2xl">Start Assessing</p>
+              <br>
+              <section id="link4_3_1" class="border-1-[2px]">
+                <div class="h-full mt-1 ml-5">
+                  <h2 class="font-bold text-xl">A. Draw AOI</h2>
+                  <p class="text-base pb-4 ml-6"> Draw or make your Area Of Interest (AOI) in the map canvas to your preferrable area</p>
+                  <p class="text-xl pb-1 ml-6"> Drawing Tool Description</p>
+                  <br>
+                  <img class="ml-6" src="img\UI_adv_drawing.png" alt="Drawing Tool UI Description" style="width:720px;">
+                  <br>
+                  <h3 class="text-base pb-1 ml-6">1. Pan Tool</h3>
+                  <p class="text-base pb-2 ml-9">Geometry tool for dragging map view and select geometry on the map</p>
+                  <h3 class="text-base pb-1 ml-6">2. Point Tool</h3>
+                  <p class="text-base pb-2 ml-9">Geometry tool for making a Point of Interest (POI)</p>
+                  <h3 class="text-base pb-1 ml-6">3. Line Tool</h3>
+                  <p class="text-base pb-2 ml-9">Geometry tool for makina a line geometry (not so much used in the app)</p>
+                  <h3 class="text-base pb-1 ml-6">4. Polygon Tool</h3>
+                  <p class="text-base pb-2 ml-9">Geometry tool for making an AOI with polygon-shaped</p>
+                  <h3 class="text-base pb-1 ml-6">5. Rectangular Tool</h3>
+                  <p class="text-base pb-2 ml-9">Geometry tool for making an AOI with rectangular-shaped</p>
+                  <h3 class="text-base pb-1 ml-6">6. Geometry Layer Panel</h3>
+                  <p class="text-base pb-6 ml-9">Panel for managing geometry layer such as showing/hiding/deleting geometry</p>
+                </div>
+              </section>
+              <section id="link4_3_2" class="border-1-[2px]">
+                <div class="h-full mt-1 ml-5">
+                  <h2 class="font-bold text-xl">B. Input Range-Scale and Assess</h2>
+                  <p class="text-base pb-1 ml-6">Range are added in the date input box. Range is used for assessing data in a certain time based on your start date and finish date input.</p>
+                  <p class="text-base pb-4 ml-6">Scale input is used for specifying the size of the pixel resolution to assess in a certain area.</p>
+                  <h2 class="text-base pb-1 ml-6"><u>Notes:</u></h2>
+                  <p class="text-base pb-2 ml-6">> Date format is in YYYY-MM-DD.</p>
+                  <p class="text-base pb-2 ml-6">> Timeseries animation can only be shown if your date range is in 3, 6, 12, 16, and 24 months.</p>
+                  <p class="text-base pb-2 ml-6">> The bigger scale, can be the solution if your monthly chart shows <em>anomolies (PFZ Score is more than 4)</em></p>
+                  <p class="text-base pb-4 ml-6">> The bigger scale can cause an error in assessing monthly chart, so be careful.</p>
+                  <img class="pb-6 ml-6" src="img\UI_cht_date.png" alt="Date Input UI Description" style="width:250px;">
+                </div>
+              </section>
+              <section id="link4_3_3" class="border-1-[2px]">
+                <div class="h-full mt-1 ml-5">
+                  <h2 class="font-bold pb-2 text-xl">C. Assess Certain Pixel</h2>
+                  <p class="text-base pb-4 ml-6">1. Click on the Inspector Tool Button</p>
+                  <p class="text-base pb-4 ml-6">2. Click a certain point on the image shown in the map canvas</p>
+                  <p class="text-base pb-4 ml-6">3. Chart will show in the main panel</p>
+                  <p class="text-base pb-4 ml-6">4. Close inspector tool by clicking the Close Inspector Button</p>
+                  <p class="text-base pb-4 ml-6">5. Choose Inspector Tool again and click on a certain point or pixel of the image shown again</p>
+                </div>
+              </section>
+              <section id="link4_3_4" class="border-1-[2px]">
+                <div class="h-full mt-1 ml-5">
+                  <h2 class="font-bold pb-2 text-xl">D. Assessing Again (Optional)</h2>
+                  <p class="text-base pb-4 ml-6">1. Move or delete your AOI using Pan Tool</p>
+                  <p class="text-base pb-4 ml-6">2. Make or draw your AOI again in your preferable area</p>
+                  <p class="text-base pb-4 ml-6">3. Choose Refresh Panel Button in the main panel</p>
+                  <p class="text-base pb-4 ml-6">4. Input your new data range if needed and choose Assess Data Button</p>
+                </div>
+              </section>
+            </div>
+          </section>
+          <br>
+
+          <section id="link4_4" class="border-1-[2px]">
+            <div class="h-full mt-3 ml-5">
+              <p class="font-bold text-2xl">Download Chart Data</p>
+              <p class="font-normal text-lg"> Chart data can be downloaded by clicking the download button in the upper right of the chart.
+                Data can be downloaded into *.csv, *.svg, and *.png format.
+              </p>
+            </div>
+          </section>
+          <br>
+
+        </section>
+        <!-- Link4 end-->
+        
         <!-- Link5 starts -->
         <section id="link5">
           <div class="h-full mt-10">
-            <p class="font-normal text-2xl">Reference</p>
+            <p class="font-extrabold text-3xl">Reference</p>
             <p class="text-sm pt-5 pb-4">Reference used in this project</p>
           </div>
 
@@ -563,13 +701,27 @@
             <div class="h-full mt-3 ml-5">
               <p class="font-normal text-xl">Journal bibliography</p>
               <p class="text-sm pt-2 pb-4">
-                Gradient Color:
-                <a
-                  class="underline"
-                  href="https://uigradients.com"
-                  target="_blank"
-                  >https://uigradients.com</a
-                >
+                Kuhn, C., de Matos Valerio, A., Ward, N., Loken, L., Sawakuchi, H. O., Kampel, M., Richey, J., Stadler, P., Crawford, J., Striegl, R., Vermote, E., Pahlevan, N., & Butman, D. (2019). 
+                Performance of Landsat-8 and Sentinel-2 surface reflectance products for river remote sensing retrievals of chlorophyll-a and turbidity. 
+                <em>Remote Sensing of Environment</em>, 224, 104-118. 
+                <u>https://doi.org/10.1016/j.rse.2019.01.023</u>
+              </p>
+              <p class="text-sm pt-2 pb-4">
+                Parwati, E., & Purwanto, A. D. (2017). 
+                Time series analysis of total suspended solid (TSS) using Landsat data in Berau coastal area, Indonesia. 
+                <em>International Journal of Remote Sensing and Earth Sciences</em>, 14(1), 61-70.
+              </p>
+              <p class="text-sm pt-2 pb-4">
+                Prabiantissa, C. N., Basuki, A., & Sesulihatien, W. T. (2019). 
+                Observation of fish dissemination pattern on madura coastal using segmentation ofSatellite images. 
+                <em>EMITTER International Journal of Engineering Technology</em>, 7(1), 343-363. 
+                <u>https://emitter2.pens.ac.id/ojs/index.php/emitter/article/view/383/146</u>.
+              </p>
+              <p class="text-sm pt-2 pb-4">
+                Supriatna, L., Supriatna, J., Koetsoer, R. H., & Takarina, N. D. (2016). 
+                Algorithm model for the determination of Cimandiri Estuarine boundary using remote sensing. 
+                <em>AIP Conference Proceedings</em>. 
+                <u>https://doi.org/10.1063/1.4946982</u>.
               </p>
             </div>
           </section>
@@ -584,15 +736,24 @@
             <p class="text-sm pt-5 pb-4">
               If you have any issue please contact 
               <a
-                href="https://github.com/lmas3009/cleandocs-template"
+                href="fakmalpradana@mail.ugm.ac.id"
                 target="_blank"
                 class="bg-gray-300 text-slate-700 rounded p-1 hover:text-pink-400"
-                >contoh@email.com</a
+                >fakmalpradana@mail.ugm.ac.id </a
+              >
+              or 
+              <a
+                href="hyatma.a.a@mail.ugm.ac.id"
+                target="_blank"
+                class="bg-gray-300 text-slate-700 rounded p-1 hover:text-pink-400"
+                >hyatma.a.a@mail.ugm.ac.id</a
               >
             </p>
           </div>
         </section>
         <!-- Link6 ends -->
+        
+        
       </div>
     </div>
     <!-- Footer starts here -->
