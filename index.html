@@ -41,9 +41,9 @@
     class="dark:bg-slate-900 bg-white dark:text-white"
   >
     <!-- Header start here -->
-    <header class="w-full p-3 border-b dark:border-b  flex">
+    <header class="w-full p-3 border-b dark:border-b flex">
       <nav
-        class="w-full flex flex-col lg:flex-row md:flex-row sm:flex-row items-start lg:item-center md:item-center sm:item-center lg:justify-between md:justify-between sm:justify-between justify-start dark:text-white"
+        class="w-full mr-20 flex flex-col lg:flex-row md:flex-row sm:flex-row items-start lg:item-center md:item-center sm:item-center lg:justify-between md:justify-between sm:justify-between justify-start dark:text-white"
       >
         <ul>
           <!-- You can change your logo name -->
@@ -52,11 +52,6 @@
           </li>
         </ul>
         <ul id="header-nav" class="mr-6 sm:flex md:flex lg:flex hidden">
-          <li
-            class="mr-5 mb-3 mt-5 sm:mb-0 sm:mt-0 md:mb-0 md:mt-0 lg:mb-0 lg:mt-0"
-          >
-            <a href="./index.html">Home</a>
-          </li>
           <li
             class="mr-5 mb-3 mt-5 sm:mb-0 sm:mt-0 md:mb-0 md:mt-0 lg:mb-0 lg:mt-0"
           >
@@ -79,37 +74,6 @@
                 <p onclick="lightmode()">
                   <img src="./public/svgs/sun-dark.svg" alt="sun Link" />
                 </p>
-              </li>
-              <li class="mr-5 flex dark:hidden" >
-                <a href="#Github"
-                  ><img src="./public/svgs/github.svg" alt="GitHub Link"
-                /></a>
-              </li>
-              <li class="mr-5 hidden dark:flex" >
-                <a href="#Github"
-                  ><img src="./public/svgs/github-dark.svg" alt="GitHub Link"
-                /></a>
-              </li>
-              <li class="mr-5 flex dark:hidden" >
-                <a href="#Twitter"
-                  ><img src="./public/svgs/twitter.svg" alt="Twitter Link"
-                /></a>
-              </li>
-              <li class="mr-5 hidden dark:flex" >
-                <a href="#Twitter"
-                  ><img src="./public/svgs/twitter-dark.svg" alt="Twitter Link"
-                /></a>
-              </li>
-              <li class="mr-5 flex dark:hidden" >
-                <a href="#Youtube"
-                  ><img src="./public/svgs/youtube.svg" alt="YouTube Link"
-                /></a>
-              </li>
-              <li class="mr-5 hidden dark:flex" >
-                <a href="#Youtube"
-                  ><img src="./public/svgs/youtube-dark.svg" alt="YouTube Link"
-                /></a>
-              </li>
             </ul>
           </div>
         </ul>
@@ -177,111 +141,18 @@
       <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6"
       >
-        <div
-          class="max-w-sm rounded shadow bg-white bg-gradient-to-br from-[#302b63] to-[#2c3e50] block -inset-1 -skew-y-3 relative inline-block before:block before:absolute before:-inset-1 before:bg-[#F27121] before:h-2 before:rounded"
-        >
-          <div class="flex">
-            <div class="px-6 py-5">
-              <embed src="img\ChartAnalysis.svg" alt="gambar1">
-              <p
-                tabindex="0"
-                class="focus:outline-none text-base font-medium leading-none text-white flex items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6 mr-2"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
-                  />
-                </svg>
-                Chart Analysis 
-              </p>
-              <p
-                tabindex="0"
-                class="focus:outline-none text-base leading-2 text-gray-300 dark:text-gray-400 pt-2"
-              >
-                This app will generated the potential fishing zone
-                with landsat 8 imagery data. The most potential zone
-                will be shown with higher suitability index
-              </p>
-              
-            </div>
-          </div>
-        </div>
-        <div
-          class="max-w-sm rounded shadow bg-white bg-gradient-to-br from-[#302b63] to-[#2c3e50] block -inset-1 -skew-y-3 relative inline-block before:block before:absolute before:-inset-1 before:bg-pink-500 before:h-2 before:rounded"
-        >
-          <div class="flex">
-            <div class="px-6 py-5">
-              <embed src="img\BasicAnalysis.svg" type="">
-              <p
-                tabindex="0"
-                class="focus:outline-none text-base font-medium leading-none text-white flex items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6 mr-2"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M2 9.5A3.5 3.5 0 005.5 13H9v2.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 15.586V13h2.5a4.5 4.5 0 10-.616-8.958 4.002 4.002 0 10-7.753 1.977A3.5 3.5 0 002 9.5zm9 3.5H9V8a1 1 0 012 0v5z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                Basic Analysis
-              </p>
-              <p
-                tabindex="0"
-                class="focus:outline-none text-base leading-2 text-gray-300 dark:text-gray-400 pt-2"
-              >
-                We provide the basic analysis with a simple
-                tool and ui. With this app you can use it for 
-                analyzing the potential fishing zone based on
-                historical imagery data.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="max-w-sm rounded shadow bg-white bg-gradient-to-br from-[#302b63] to-[#2c3e50] block -inset-1 -skew-y-3 relative inline-block before:block before:absolute before:-inset-1 before:bg-[#F27121] before:h-2 before:rounded"
-        >
-          <div class="flex">
-            <div class="px-6 py-5">
-              <embed src="img\TimeseriesAnalysis.svg" type="">
-              <p
-                tabindex="0"
-                class="focus:outline-none text-base font-medium leading-none text-white flex items-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6 mr-2"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                Time Series Analysis
-              </p>
-              <p
-                tabindex="0"
-                class="focus:outline-none text-base leading-2 text-gray-300 dark:text-gray-400 pt-2"
-              >
-                Also we provide the more advance app, that
-                will generated monthly time series between 
-                the custom date. 
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="px-5 py-4 hover:drop-shadow-2xl">
+        <embed src="img\BasicAnalysis_2.svg" alt="gambar1">      
+      </div>
+
+      <div class="mt-2 px-5 py-5 hover:drop-shadow-2xl">
+        <embed src="img\TimeseriesAnalysis_2.svg" alt="gambar1">      
+      </div>
+
+      <div class="px-6 py-5 hover:drop-shadow-2xl">
+        <embed src="img\ChartAnalysis_2.svg" alt="gambar1">      
+      </div>        
+        
       </div>
     </div>
     <!-- Documentation Cards ends here -->
