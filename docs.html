@@ -157,7 +157,12 @@
               <li
                 class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"
               >
-                <a href="#link2_5" class="no-underline hover:underline">Get AOI Coordinates</a>
+                <a href="#link2_5" class="no-underline hover:underline">Download Data as TIFF</a>
+              </li>
+              <li
+                class="text-[#111] dark:text-slate-300 pl-[20px] font-[400] border-l-[2px]"
+              >
+                <a href="#link2_6" class="no-underline hover:underline">Get AOI Coordinates</a>
               </li>
             </ul>
           </li>
@@ -395,6 +400,34 @@
           <br>
 
           <section id="link2_5" class="border-1-[2px]">
+            <div class="h-full mt-3 ml-5">
+              <p class="font-bold text-2xl">Download Data as TIFF</p>
+              <br>
+              <img src="img\UI_DriveDownload.png" alt="download tif">
+              <br>
+              <h3 class="text-base pb-1 ml-6">1. Download Button</h3>
+              <p class="text-base pb-2 ml-9">Click this button if you want to download the PFZ data inside your AOI. This button will generate the download task in Task Window.</p>
+              <h3 class="text-base pb-1 ml-6">2. Task Window</h3>
+              <p class="text-base pb-2 ml-9">The Download task will appear in here. You can manage your all download task in here.</p>
+              <h3 class="text-base pb-1 ml-6">3. Run Task Button</h3>
+              <p class="text-base pb-2 ml-9">This button will running your download task into your Drive.</p>
+              <h3 class="text-base pb-1 ml-6">4. Task Name</h3>
+              <p class="text-base pb-2 ml-9">Description about the download task</p>
+              <h3 class="text-base pb-1 ml-6">5. CRS Identification</h3>
+              <p class="text-base pb-2 ml-9">This text box define the Coordinates Reference System of the PFZ data. The default CRS is 'EPSG:4326' (World Geodetic System 1984).</p>
+              <h3 class="text-base pb-1 ml-6">6. Scale</h3>
+              <p class="text-base pb-2 ml-9">The pixel scale of the PFZ data in meters/pixels. Because of the imagery data from LANDSAT 8, the default value is 30.</p>
+              <h3 class="text-base pb-1 ml-6">7. Download Location</h3>
+              <p class="text-base pb-2 ml-9">Download location path in Drive. If the text field is left blank, the downloaded file will placed in root.</p>
+              <h3 class="text-base pb-1 ml-6">8. File Name</h3>
+              <p class="text-base pb-2 ml-9">Create your download file name in here.</p>
+              <h3 class="text-base pb-1 ml-6">9. File Format</h3>
+              <p class="text-base pb-2 ml-9">This field use for define the file format (default format is GEO_TIFF).</p>
+            </div>
+          </section>
+          <br>
+
+          <section id="link2_6" class="border-1-[2px]">
             <div class="h-full mt-3 ml-5">
               <p class="font-bold text-2xl">Get AOI Coordinates</p>
               <br>
